@@ -1,0 +1,58 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 45px 20px;
+  padding: 30px 50px 50px 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card {
+  background: #ffffff;
+  border: 2px solid rgb(242, 242, 242);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow:
+    0 0 10px rgb(251, 251, 251),
+    0 0 20px #fafafa outset;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  padding: 40px 40px 80px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+.cardGrid a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow:
+    0 0 10px #b7b7b7,
+    0 0 1px #c3c3c3 inset;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;       /* fixed height */
+  object-fit: contain; /* no cropping, adds empty space */
+  background-color: #f9f9f9; /* optional: neutral background */
+  border-radius: 10px;
+}
+
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  color: black;
+}
